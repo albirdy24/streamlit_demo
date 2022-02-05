@@ -23,9 +23,11 @@ hist_2 = t2.history(period='1y')
 
 #dataframe = np.random.randn(10, 20)
 #st.dataframe(hist)
-st.dataframe(hist.style.highlight_max(axis=0))
+st.dataframe(hist_1.style.highlight_max(axis=0))
+st.dataframe(hist_2.style.highlight_max(axis=0))
 
-st.line_chart(hist.Open)
+st.line_chart(hist_1.Open)
+st.line_chart(hist_2.Open)
 
 x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
