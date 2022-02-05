@@ -17,9 +17,9 @@ ticker_1 = 'AAPL'
 ticker_2 = 'TSLA'
 
 t1 = yf.Ticker(ticker_1)
-hist_1 = t1.history(period='1y')
+hist_1 = t1.history(period='1m')
 t2 = yf.Ticker(ticker_2)
-hist_2 = t2.history(period='1y')
+hist_2 = t2.history(period='1m')
 
 
 st.subheader(ticker_1)
