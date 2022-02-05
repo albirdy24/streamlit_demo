@@ -13,7 +13,7 @@ Here's our first attempt at using data to create a table:
 import numpy as np
 
 
-ticker = 'TSLA'
+ticker = 'AAPL'
 tsla = yf.Ticker(ticker)
 hist = tsla.history(period='1y')
 
