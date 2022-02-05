@@ -13,9 +13,13 @@ Here's our first attempt at using data to create a table:
 import numpy as np
 
 
-ticker = 'AAPL'
-tsla = yf.Ticker(ticker)
-hist = tsla.history(period='1y')
+ticker_1 = 'AAPL'
+ticker_2 = 'TSLA'
+
+t1 = yf.Ticker(ticker_1)
+hist_1 = t1.history(period='1y')
+t2 = yf.Ticker(ticker_2)
+hist_2 = t2.history(period='1y')
 
 #dataframe = np.random.randn(10, 20)
 #st.dataframe(hist)
