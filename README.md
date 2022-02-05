@@ -1,2 +1,2 @@
-# streamlit_demo
-demo of streamlit functions
+# demo of streamlit 
+displaying financial data with streamlit
