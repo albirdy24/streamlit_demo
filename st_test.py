@@ -21,9 +21,10 @@ hist_1 = t1.history(period='1y')
 t2 = yf.Ticker(ticker_2)
 hist_2 = t2.history(period='1y')
 
-#dataframe = np.random.randn(10, 20)
-#st.dataframe(hist)
+
+st.subheader(ticker_1)
 st.dataframe(hist_1.style.highlight_max(axis=0))
+st.subheader(ticker_2)
 st.dataframe(hist_2.style.highlight_max(axis=0))
 
 st.line_chart(hist_1.Open)
