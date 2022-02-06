@@ -17,15 +17,17 @@ ticker_1 = 'AAPL'
 ticker_2 = 'TSLA'
 
 t1 = yf.Ticker(ticker_1)
-hist_1 = t1.history(period='1mo')
+hist_1 = t1.history(period='3mo')
 t2 = yf.Ticker(ticker_2)
-hist_2 = t2.history(period='1mo')
+hist_2 = t2.history(period='3mo')
 
 
 st.subheader(ticker_1)
 st.dataframe(hist_1.style.highlight_max(axis=0))
 st.subheader(ticker_2)
 st.dataframe(hist_2.style.highlight_max(axis=0))
+
+
 
 st.line_chart(hist_1.Open)
 st.line_chart(hist_2.Open)
